@@ -52,11 +52,15 @@ nav ul li a {
 }
 
 
-nav a.active {
-  color: white;
+nav ul li a.active {
+  color: #1e272e;
   font-weight: 700;
 }
 
+nav .right-side a.active {
+  color: white;
+  font-weight: 700;
+}
 
 nav .right-side a {
   font-size: 15px;
