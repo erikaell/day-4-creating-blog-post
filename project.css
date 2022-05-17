@@ -1,0 +1,358 @@
+/* Add My Project */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: #f4f3f3;
+  height: 7vh;
+  display: flex;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav .left-side {
+  flex: 50%;
+  padding-left: 90px;
+}
+
+nav .right-side {
+  flex: 50%;
+  padding-right: 90px;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: #1e272e;
+  font-weight: 700;
+}
+
+nav .right-side a.active {
+  color: white;
+  font-weight: 700;
+}
+
+nav .right-side a {
+  font-size: 15px;
+  padding: 8px 20px;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-form {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #e3e7eb;
+}
+
+.project-form .form-container {
+  width: 500px;
+}
+
+.project-form .form-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-form form label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-form form input,
+textarea,
+select {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-form form .input-project-date {
+  display: flex;
+  column-gap: 1vh;
+}
+
+.project-form form textarea {
+  height: 150px;
+}
+
+.project-form form ul {
+  column-count: 2;
+  list-style: none;
+  padding: 0;
+}
+
+.project-form form .technologies label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Customize the label (the container) */
+.project-form form .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.project-form form .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.project-form form .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.project-form form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.project-form form .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.project-form form .container .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 3px;
+  height: 8px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.project-form form .input-project-image-group {
+  width: 97%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.project-form form .input-project-image-group label p {
+  font-size: 15px;
+}
+
+.project-form form .input-project-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-form form .button-group {
+  text-align: right;
+}
+
+.project-form form button {
+  margin-top: 50px;
+  padding: 8px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.project-post {
+  background-color: #f8f8f8;
+  padding: 50px 80px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.card-container {
+
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  display: flex;
+  /* display: grid; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30%;
+  /* grid-template-columns: auto auto auto;
+  align-content: center;
+  justify-content: center; */
+  gap:15px;
+}
+
+
+.card {
+  width: relative;
+  display: flex;
+  height: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 5px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-detail {
+  width: 100%;
+  text-align: left;
+}
+
+.card-container img {
+  width: 100%;
+}
+
+.card-container h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-container .techs {
+  text-align: left;
+}
+
+.card-container .techs i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.card-container .btn-edit, .btn-delete {
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  width: 49%;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-post-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.project-post-detail h1 {
+  text-align: center;
+}
+
+.project-post-detail-info {
+  display: flex;
+  position: relative;
+  width: auto;
+  margin: 40px;
+}
+
+.project-post-detail-info .left {
+  flex: 70%;
+  margin-right: 45px;
+}
+.project-post-detail-info img {
+  width: 100%;
+}
+
+.project-post-detail-info .right {
+  flex: 40%;
+  align-items: flex-start;
+}
+
+.project-post-detail-info .right i {
+  font-size: 25px;
+  margin-right: 10px;
+  color: black
+}
+
+.project-post-detail-info .right h4 {
+  color: rgb(104, 100, 100);
+  font-weight: 600;
+}
+
+.project-post-detail-info ul {
+  width: 300px;
+}
+
+.project-post-detail-info ul li {
+  width: 100px;
+  display: inline-block;
+}
+
+.project-post-detail .desc {
+  display: flex;
+  margin: 30px;
+  width: auto;
+}
+
+.project-post-detail .desc p {
+  text-align: justify;
+}

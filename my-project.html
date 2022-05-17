@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Personal Web - My Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="my-project.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="left-side">
+        <a href="#"><img src="assets/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" class="active">My Project</a></li>
+        </ul>
+      </div>
+
+      <div class="right-side">
+        <a href="contact-me.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <div class="project">
+      <div class="section">
+        <div class="project-form">
+          <div class="form-container">
+            <form>
+              <h1>ADD MY PROJECT</h1>
+              <div>
+                <label for="input-project-title">Title</label>
+                <input id="input-project-title" />
+              </div>
+              <div class="input-project-date">
+                <div class="start-date">
+                  <label for="input-project-start-date">Start Date</label>
+                  <input type="date" id="input-project-start-date" />
+                </div>
+                <div class="end-date">
+                  <label for="input-project-end-date">End Date</label>
+                  <input type="date" id="input-project-end-date" />
+                </div>
+              </div>
+              <div>
+                <label for="input-project-description">Description</label>
+                <textarea id="input-project-description"></textarea>
+              </div>
+              <label>Technologies</label>
+              <div class="technologies">
+                <ul>
+                  <li>
+                    <label class="container"
+                      >HTML
+                      <input
+                        type="checkbox"
+                        name="program"
+                        value="<i class='fa-brands fa-html5'></i>"
+                        id="html"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >CSS
+                      <input
+                        type="checkbox"
+                        name="program"
+                        value="<i class='fa-brands fa-css3'></i>"
+                        id="css"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Javascript
+                      <input
+                        type="checkbox"
+                        name="program"
+                        value="<i class='fa-brands fa-js'></i>"
+                        id="javascript"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >PHP
+                      <input
+                        type="checkbox"
+                        name="program"
+                        value="<i class='fa-brands fa-php'></i>"
+                        id="typescript"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <label>Upload Image</label>
+                <div class="input-project-image-group">
+                  <label for="input-project-image">
+                    <p>Choose</p>
+                    <img src="assets/file.png" alt="file" />
+                  </label>
+                  <input type="file" id="input-project-image" hidden />
+                </div>
+              </div>
+              <div class="button-group">
+                <button type="button" onclick="addProject()">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="lists" class="project-post">
+          <h1>MY PROJECT</h1>
+          <div id="cards" class="card-container">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
